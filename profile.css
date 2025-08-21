@@ -1,0 +1,96 @@
+/* พื้นหลังและฟอนต์ */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffe4b5;
+    overflow-x: hidden;
+  }
+  
+  /* กล่องหลัก */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    gap: 50px;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  /* รูปโปรไฟล์ */
+  .profile-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    animation: bounceIn 1.4s ease-in-out;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-image img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ข้อมูลโปรไฟล์ */
+  .profile-info {
+    font-size: 18px;
+    color: #000;
+    animation: slideUp 1s ease-in-out;
+  }
+  
+  /* กล่อง profile ที่คลิกได้ */
+  .profile-header {
+    background-color: #4dd0e1;
+    width: 120px;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    animation: bounceIn 1.5s ease-in-out;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .profile-header:hover {
+    background-color: #00bcd4;
+    transform: scale(1.05);
+  }
+  
+  /* ===== Animation Keyframes ===== */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

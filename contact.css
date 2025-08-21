@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffe4b5;
+  }
+  
+  .contact-container {
+    padding: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-header {
+    background-color: #f48fb1;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 30px;
+    width: 140px;
+    margin: 0 auto 30px;
+    padding: 10px 0;
+  }
+  
+  .contact-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #000;
+  }
+  
+  .contact-row img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 8px;
+  }
+  
